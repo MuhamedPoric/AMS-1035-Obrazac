@@ -25,9 +25,8 @@ async function generateTaxForm() {
     document.getElementById('taxableAmount').innerText = `Osnovica za porez: ${V.toFixed(2)} KM`;
     document.getElementById('taxAmount').innerText = `Iznos poreza: ${W.toFixed(2)} KM`;
 
-    // Load the PDF template from the given URL and fill fields
-    const pdfUrl = 'https://www.pufbih.ba/v1/public/upload/obrasci/b839c-obrazac-ams_bos_web.pdf';
-    const existingPdfBytes = await fetch(pdfUrl).then(res => res.arrayBuffer());
+    // Load the PDF template and fill fields
+    const existingPdfBytes = await fetch('b839c-obrazac-ams_bos_web.pdf').then(res => res.arrayBuffer());
     const pdfDoc = await PDFLib.PDFDocument.load(existingPdfBytes);
     const form = pdfDoc.getForm();
 
