@@ -47,3 +47,7 @@ Morate uključiti kredite i link na ovaj repozitorij.
 Autor
 Muhamed Porić
 [GitHub Repozitorij](https://github.com/MuhamedPoric/AMS-1035-Obrazac.git)
+```
+
+Kontakt:
+[contact@muhamedporic.dev](mailto:contact@muhamedporic.dev)
