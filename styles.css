@@ -1,0 +1,92 @@
+/* 2024 Made by Muhamed Porić. You can modify the code but must include the credit with a link to this repository. */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    margin-bottom: 40px;
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #4caf7d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a082;
+}
+
+.results {
+    margin-top: 20px;
+    background-color: #efefef;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.results p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.credits {
+    text-align: center;
+    font-size: 12px; /* Smaller font size */
+    color: #888; /* Gray color */
+}
+
+.warning {
+    background-color: #fff3cd; /* Light yellow background */
+    border: 1px solid #ffeeba; /* Yellowish border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.warning p {
+    margin: 0; /* Remove default margins */
+    color: #856404; /* Dark yellowish color for text */
+    font-size: 16px; /* Text size */
+}

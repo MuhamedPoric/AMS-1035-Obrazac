@@ -1,0 +1,62 @@
+<!-- 2024 Made by Muhamed Porić. You can modify the code but must include the credit with a link to this repository. -->
+
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrazac AMS - 1035 Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/pdf-lib"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Obrazac AMS - 1035 Generator</h1>
+            <p class="credits">2024 Made by <a href="https://muhamedporic.dev" target="_blank">Muhamed Porić</a>. Visit Project Link: <a href="#">Github</a></p>
+        </div>
+        <!-- Input fields -->
+        <label for="bankAmount">Iznos koji je uplaćen na vaš bankovni račun:</label>
+        <input type="number" id="bankAmount" placeholder="Unesite iznos" required>
+
+        <label for="jmbg">JMBG:</label>
+        <input type="text" id="jmbg" placeholder="Unesite vaš JMBG" required>
+
+        <label for="receivedDate">Datum prijema uplate:</label>
+        <input type="date" id="receivedDate" required>
+
+        <label for="taxPeriodMonth">Period za koji se podnosi porez (mjesec/godina):</label>
+        <input type="text" id="taxPeriodMonth" placeholder="MM" maxlength="2" style="width:50px" required>
+        <input type="text" id="taxPeriodYear" placeholder="GG" maxlength="4" style="width:60px" required>
+
+        <label for="name">Ime i prezime:</label>
+        <input type="text" id="name" placeholder="Unesite vaše ime i prezime" required>
+
+        <label for="address">Vaša adresa:</label>
+        <input type="text" id="address" placeholder="Unesite vašu adresu" required>
+
+        <label for="title">Naziv prihoda:</label>
+        <input type="text" id="title" placeholder="Unesite naziv prihoda" required>
+
+        <label for="senderAddress">Adresa pošiljatelja:</label>
+        <input type="text" id="senderAddress" placeholder="Unesite adresu pošiljatelja" required>
+
+        <label for="country">Država pošiljatelja:</label>
+        <input type="text" id="country" placeholder="Unesite državu pošiljatelja" required>
+        <div class="warning">
+            <p>⚠️ Mi ne-pohranjujemo vaše informacije. Source kod projekta je otvoren.</p>
+        </div>
+        <button onclick="generateTaxForm()">Generiši porezni obrazac</button>
+
+        <!-- Output results -->
+        <div class="results">
+            <p id="earnedAmount">Iznos dohotka (-20%): </p>
+            <p id="healthInsurance">Zdravstveno osiguranje (x0,04): </p>
+            <p id="taxableAmount">Osnovica za porez: </p>
+            <p id="taxAmount">Iznos poreza: </p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
