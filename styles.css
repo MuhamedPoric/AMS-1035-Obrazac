@@ -8,7 +8,7 @@ body {
 
 .container {
     background-color: #fff;
-    padding: 20px 20px 5px 20px;
+    padding: 20px 20px 4px 20px;
     border-radius: 10px;
     max-width: 600px;
     margin: 0 auto;
@@ -90,3 +90,4 @@ button:hover {
     color: #856404; /* Dark yellowish color for text */
     font-size: 16px; /* Text size */
 }
+
