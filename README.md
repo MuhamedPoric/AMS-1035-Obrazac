@@ -3,6 +3,7 @@
 ## Pregled
 
 **Obrazac AMS - 1035 Generator** je web aplikacija koja omogućava jednostavno kreiranje poreznih obrazaca u Bosni. Aplikacija omogućava korisnicima da unesu svoje finansijske informacije, izračunaju relevantne iznose i generišu popunjen PDF obrazac na osnovu unesenih podataka.
+Mozete ga koristiti ovdje: https://muhamedporic.github.io/AMS-1035-Obrazac
 
 ## Karakteristike
 
